@@ -4,8 +4,8 @@
   "description": "## 目录 - [语言](#语言) - [技术栈](#技术栈)   - [客户端](#客户端)   - [服务端](#服务端) - [编程思想](#编程思想) - [文件组织结构](#文件组织结构) - [脚本命令](#脚本命令) - [设计模式](#设计模式)",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
