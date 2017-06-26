@@ -17,6 +17,7 @@ loadPartials()
 const routes = require('./routes/index')
 app.use('/', routes)
 
+// binding application to specified port
 const server = app.listen(
   3000,
   () => {
