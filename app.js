@@ -7,6 +7,10 @@ app.engine('hbs', engines.handlebars)
 app.set('views', './views')
 app.set('view engine', 'hbs')
 
+// Loading partials
+const loadPartials = require('./helpers/partialsLoader')
+loadPartials()
+
 // Loading middleware
 
 // Declaring application routes
