@@ -17,6 +17,16 @@ loadPartials()
 const routes = require('./routes/index')
 app.use('/', routes)
 
+// static middleware after the routes
+app.use('/img', express.static('public/img'))
+app.use('/css', express.static('public/css'))
+app.use('/js', express.static('public/js'))
+
+// catch 404
+app.use((req, res, next) => {
+  res.render('404', {})
+})
+
 // binding application to specified port
 const server = app.listen(
   3000,

@@ -29,15 +29,16 @@
 当前文件目录结构
 ```
 .
-├── public                 # public is a folder that’s served by static file middleware
-├── routes                 # routes is a folder that holds numerous JavaScript files, each one exporting an Express router
-├── views                  # views is a folder that holds all of your views
 ├── docs                   # 架构与开发文档
+├── helpers                # 帮助文件
 ├── node_modules           # 依赖包
-├── public                 # 编译基础文件
-│   ├── index.html         # 固定首页模板
-│   └── favicon.ico        # 网站App 图标
-└── app.js                 # 编辑器设置文件
+├── public                 # 静态文件
+│   ├── css                # 样式文件
+│   └── img                # 图片文件
+│   └── js                 # 脚本文件
+├── routes                 # Express router 路由文件
+├── views                  # Views 视图模板
+└── app.js                 # 主程序入口文件
 └── .editorconfig          # 编辑器设置文件
 └── .eslintignore          # eslint 配置文件
 └── .eslintrc              # eslint 配置文件
